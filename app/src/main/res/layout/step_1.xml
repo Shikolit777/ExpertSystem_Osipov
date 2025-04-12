@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nadpis" />
 
     <EditText
-        android:id="@+id/tbVozrast"
+        android:id="@+id/Ves"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -77,10 +77,10 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbVozrast" />
+        app:layout_constraintTop_toBottomOf="@+id/Ves" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/Rost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -109,10 +109,11 @@
         android:text="ПРОДОЛЖИТЬ"
         android:textColor="#0099FF"
         android:textStyle="bold"
+        android:onClick="Perexod2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/Rost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#118EED">
 
     <TextView
@@ -35,32 +36,45 @@
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
-        android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:outlineSpotShadowColor="#FFFFFF"
         android:layout_height="134dp"
         android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@+id/nadpis"
         tools:layout_editor_absoluteX="26dp">
 
         <RadioButton
+            android:id="@+id/variant1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Раз в день" />
+            android:text="Раз в день"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
         <RadioButton
+            android:id="@+id/variant2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Три раза в неделю" />
+            android:text="Три раза в неделю"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
         <RadioButton
+            android:id="@+id/variant3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Два раза в неделю" />
+            android:text="Два раза в неделю"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
         <RadioButton
+            android:id="@+id/variant4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Раз в неделю" />
+            android:text="Раз в неделю"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
     </RadioGroup>
 
@@ -72,6 +86,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:text="ПРОДОЛЖИТЬ"
+        android:onClick="Perexod3"
         android:textColor="#0099FF"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"

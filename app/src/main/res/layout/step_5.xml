@@ -56,15 +56,21 @@
         tools:layout_editor_absoluteX="26dp">
 
         <RadioButton
+            android:id="@+id/Myzskoi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Мужской" />
+            android:text="Мужской"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
         <RadioButton
+            android:id="@+id/Zhenskiy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Женский" />
+            android:text="Женский"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
 
     </RadioGroup>
 
@@ -75,6 +81,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:onClick="Perexod6"
         android:text="НАЧАТЬ"
         android:textColor="#0099FF"
         android:textStyle="bold"
