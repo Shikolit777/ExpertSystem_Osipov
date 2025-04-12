@@ -1,9 +1,12 @@
 package com.example.expertsystem_osipov;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -96,7 +99,10 @@ public class MainActivity extends AppCompatActivity {
     public CheckBox CheckBox2;
     public CheckBox CheckBox3;
     public CheckBox CheckBox4;
-
+    public ImageView Image1;
+    public ImageView Image2;
+    public ImageView Image3;
+    public ImageView Image4;
     public void Perexod4(View view)
     {
         CheckBox1 = findViewById(R.id.checkBox1);
@@ -143,5 +149,28 @@ public class MainActivity extends AppCompatActivity {
         {
             AlertDialog("Уведомление", "Пожалуйста, укажите ваш пол.");
         }
+    }
+    public void Spina(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=aIqBeC9EhiE&pp=ygUZbmh0eWJoamRyZiBsa3og0YHQv9C40L3Ri9IHCQl-CQGHKiGM7w%3D%3D"));
+        startActivity(intent);
+    }
+
+    public void Bicepsy(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=HZljSiK8UUY&pp=ygUWbmh0eWJoamRyZiBsa3ogLGJ3dGdjZg%3D%3D"));
+        startActivity(intent);
+    }
+
+    public void Triceps(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=19ykH7bFVfQ&pp=ygUdbmh0eWJoamRyZiBsa3og0YLRgNC40YbQtdC_0YE%3D"));
+        startActivity(intent);
+    }
+
+    public void Ikronozhnye(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=zfUjxQexhjA&pp=ygUXbmh0eWJoamRyZiBsa3og0LjQutGA0Ys%3D"));
+        startActivity(intent);
     }
 }
